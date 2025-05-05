@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { RiCloseLargeFill } from 'react-icons/ri';
+import logo from '/src/assets/logo.png';
 const styles = {
   link: 'hover:bg-white hover:text-slate-800 py-1 px-2 rounded-md transition-colors duration-700 block',
   logo: 'hover:bg-white transition-colors duration-700 block rounded-2xl',
@@ -16,33 +17,33 @@ const Navbar = () => {
     <nav className="bg-slate-800 text-white p-3 z-100 ">
       <div className="flex justify-between container items-center mx-auto">
         <a href="/" className={styles.logo}>
-          <img src="src/assets/logo.png" alt="Logo" className="w-12" />
+          <img src={logo} alt="Logo" className="w-12" />
         </a>
 
         {/* navbar for large screens */}
         <ul className="hidden md:flex space-x-4">
           <li>
-            <a href="/" className={styles.link}>
+            <a href="#" className={styles.link}>
               Home
             </a>
           </li>
           <li>
-            <a href="about" className={styles.link}>
+            <a href="#" className={styles.link}>
               About
             </a>
           </li>
           <li>
-            <a href="services" className={styles.link}>
+            <a href="#" className={styles.link}>
               Services
             </a>
           </li>
           <li>
-            <a href="faq" className={styles.link}>
+            <a href="#" className={styles.link}>
               FAQ
             </a>
           </li>
           <li>
-            <a href="contact" className={styles.link}>
+            <a href="#" className={styles.link}>
               Contact
             </a>
           </li>
@@ -61,27 +62,27 @@ const Navbar = () => {
       {isMenuOpen && (
         <ul className="md:hidden flex flex-col text-center space-y-3 mt-4">
           <li>
-            <a href="/" className={styles.link}>
+            <a href="#" className={styles.link}>
               Home
             </a>
           </li>
           <li>
-            <a href="about" className={styles.link}>
+            <a href="#" className={styles.link}>
               About
             </a>
           </li>
           <li>
-            <a href="services" className={styles.link}>
+            <a href="#" className={styles.link}>
               Services
             </a>
           </li>
           <li>
-            <a href="faq" className={styles.link}>
+            <a href="#" className={styles.link}>
               FAQ
             </a>
           </li>
           <li>
-            <a href="contact" className={styles.link}>
+            <a href="#" className={styles.link}>
               Contact
             </a>
           </li>
